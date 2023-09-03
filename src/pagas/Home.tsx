@@ -22,6 +22,16 @@ function Home() {
         })
         
     },[])
+
+        const Deleteimge = (id) => {
+            axios.delete(`https://fakestoreapi.com/products/1${id}`)
+            setimg(
+                Amazonimg.filter((Amazonimg)=>{
+                    return Amazonimg.id !== id;
+                })
+            );      
+
+    
   return (
    <>
    <div className='border h-10 bg-gray-800 flex justify-start text-white text-sm'>
