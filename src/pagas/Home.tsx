@@ -102,17 +102,18 @@ Sell
     return(
         <div key={item.id}>
             <div>
-                {/* {item.description} */}
+                {item.description}
             </div>
             <div>
-                {/* {item.category} */}
+                {item.category}
             </div>
             <img className='w-10' src={item.image} alt="Logo" />
+
             <div>
-                {/* {item.title} */}
+                {item.title}
             </div>
             <div>
-                {/* {item.price} */}
+                {item.price}
             </div>
         </div>
        
